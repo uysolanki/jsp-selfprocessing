@@ -1,0 +1,33 @@
+<web-app>
+
+	<context-param>  
+		<param-name>vara</param-name>  
+		<param-value>10</param-value>  
+	</context-param> 
+	
+	<context-param>  
+		<param-name>varb</param-name>  
+		<param-value>20</param-value>  
+	</context-param> 
+	
+	
+	<servlet>
+		<servlet-name>jack</servlet-name>
+		<jsp-file>/two.jsp</jsp-file>
+		
+			<init-param>  
+			<param-name>varc</param-name>  
+			<param-value>100</param-value>  
+			</init-param>
+
+			<init-param>  
+			<param-name>vard</param-name>  
+			<param-value>200</param-value>  
+			</init-param>
+	</servlet>
+
+	<servlet-mapping>
+			<servlet-name>jack</servlet-name>
+			<url-pattern>/titanic</url-pattern>
+	</servlet-mapping>
+</web-app>
